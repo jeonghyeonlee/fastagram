@@ -63,3 +63,10 @@ target/
 
 # autoenv
 .env
+
+# vim
+*.sw[po]
+
+# pycharm
+.idea
+
