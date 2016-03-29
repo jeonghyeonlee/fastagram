@@ -2,7 +2,7 @@ from django.conf.urls import url
 from django.contrib import admin
 from users.views import *
 
-from fastagram.fastagram.views import *
+from fastagram.views import *
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
