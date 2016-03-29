@@ -20,3 +20,11 @@ class Post(models.Model):
 
     created_at = models.DateTimeField(auto_now_add=True, )
     updated_at = models.DateTimeField(auto_now=True, )
+
+    def init_hash_id(self):
+        from hashids import Hashids
+
+        hashids_object = Hashids(salt="sodarain", min_length=4)
+        hash_id = hashids_object.encode(self.id)
+        self.hash_id = hash_id
+        self.save()
