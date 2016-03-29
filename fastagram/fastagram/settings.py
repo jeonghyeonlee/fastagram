@@ -131,3 +131,4 @@ STATIC_URL = '/static/'
 
 # Custom Authentication Settings
 AUTH_USER_MODEL = 'users.User'
+LOGIN_URL = "/login/"
