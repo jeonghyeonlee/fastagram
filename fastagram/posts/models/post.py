@@ -16,7 +16,6 @@ class Post(models.Model):
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL,
     )
-
     image = models.ImageField()
     content = models.TextField()
 
