@@ -3,3 +3,4 @@ Pillow
 hashids
 raven
 psycopg2
+dj-database-url
