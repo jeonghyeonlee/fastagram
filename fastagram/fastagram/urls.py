@@ -13,7 +13,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
 
     url(r'^$', HomeView.as_view(), name='home'),
-
     url(r'^login/$', LoginView.as_view(), name='login'),
     url(r'^logout/$', LogoutView.as_view(), name='logout'),
     url(r'^signup/$', SignupView.as_view(), name='signup'),
@@ -24,4 +23,4 @@ urlpatterns = [
     url(r'^posts/(?P<slug>\w+)/tags/$', PostTagCreateView.as_view(), name='post-tags'),
     url(r'^explore/tags/(?P<slug>\w+)/$', TagDetailView.as_view(), name='tag'),
     url(r'^(?P<slug>\w+)/$', ProfileView.as_view(), name='profile'),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
